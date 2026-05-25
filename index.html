@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI融教 - 初高中英语 Skill 技能包平台</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark">AI</span>
+        <span>AI融教英语 Skill</span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#showcase">封面舞台</a>
+        <a href="#library">教材封面</a>
+        <a href="#guide">下载说明</a>
+        <a href="#feedback">意见建议</a>
+      </nav>
+      <a class="header-action" href="#showcase">浏览 18 本教材</a>
+    </header>
+
+    <main id="top">
+      <aside class="page-dock" aria-label="快捷导航">
+        <a class="dock-item active" href="#top" aria-label="回到顶部">
+          <span>⌂</span>
+        </a>
+        <a class="dock-item" href="#showcase" aria-label="封面舞台">
+          <span>▣</span>
+        </a>
+        <a class="dock-item" href="#library" aria-label="教材库">
+          <span>□</span>
+        </a>
+        <a class="dock-item" href="#feedback" aria-label="意见建议">
+          <span>✉</span>
+        </a>
+      </aside>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">English Textbook Skill Library</p>
+          <h1 class="gradient-title" id="heroTitle">点击课本封面，下载对应 AI 融教 Skill 包</h1>
+          <p class="hero-text">
+            覆盖外研版与人教版初高中英语教材。每本书对应一个 GitHub 下载入口，后续可继续拆分到每个单元的 Skill 文件夹。
+          </p>
+          <div class="hero-badges" aria-label="平台特色">
+            <span>18 本教材</span>
+            <span>人教版 / 外研版</span>
+            <span>初中 + 高中</span>
+          </div>
+          <div class="hero-actions">
+            <a class="primary-button" href="#library">进入封面墙</a>
+            <a class="secondary-button" href="#guide">查看流程</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-stats" aria-label="平台数据">
+        <div>
+          <strong>18</strong>
+          <span>真实课本封面</span>
+        </div>
+        <div>
+          <strong>2</strong>
+          <span>主流教材版本</span>
+        </div>
+        <div>
+          <strong>初中 + 高中</strong>
+          <span>学段覆盖</span>
+        </div>
+        <div>
+          <strong>GitHub</strong>
+          <span>点击跳转下载</span>
+        </div>
+      </section>
+
+      <section class="showcase-section" id="showcase" aria-label="滑动封面展示">
+        <div class="showcase-stage">
+          <aside class="showcase-rail" aria-label="展示分组">
+            <button class="rail-button active" type="button" data-panel="0">PEP</button>
+            <button class="rail-button" type="button" data-panel="1">FLTRP</button>
+          </aside>
+
+          <div class="panel-stack" id="showcasePanels"></div>
+
+        </div>
+      </section>
+
+      <section class="library-section" id="library">
+        <div class="section-heading">
+          <p class="eyebrow">Cover Gallery</p>
+          <h2>选择一本课本</h2>
+        </div>
+
+        <div class="toolbar" aria-label="教材筛选">
+          <div class="segmented-control" role="tablist" aria-label="教材筛选">
+            <button class="filter-button active" type="button" data-filter="all">全部</button>
+            <button class="filter-button" type="button" data-filter="人教版">人教版</button>
+            <button class="filter-button" type="button" data-filter="外研版">外研版</button>
+            <button class="filter-button" type="button" data-filter="初中">初中</button>
+            <button class="filter-button" type="button" data-filter="高中">高中</button>
+          </div>
+          <label class="search-field">
+            <span>搜索</span>
+            <input id="searchInput" type="search" placeholder="输入版本、年级、册别" />
+          </label>
+        </div>
+
+        <div class="cover-grid" id="coverGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="closing-section" id="guide" aria-label="下载说明与意见建议">
+        <div class="closing-sticky" id="closingSticky">
+          <div class="closing-guide">
+            <div class="section-heading">
+              <p class="eyebrow">Download Flow</p>
+              <h2>把下载动作压缩到一次点击</h2>
+            </div>
+            <div class="guide-grid">
+              <article>
+                <span>01</span>
+                <h3>找到教材封面</h3>
+                <p>按版本、学段或关键词筛选，定位正在备课的那本英语教材。</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>点击封面</h3>
+                <p>整张封面都是下载入口，点击后新窗口打开对应 GitHub 资源页。</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>下载 Skill 包</h3>
+                <p>在 GitHub 中下载整本书资源，或进入后续细分的单元文件夹。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="feedback-section" id="feedback">
+            <div class="feedback-copy">
+              <p class="eyebrow">Feedback</p>
+              <h2>收集意见与建议</h2>
+              <p>
+                如果你希望补充某个单元 Skill、调整教材顺序、替换 GitHub 链接或优化页面交互，可以在这里留下建议。
+              </p>
+            </div>
+            <form class="feedback-form" id="feedbackForm">
+              <label>
+                <span>你的身份</span>
+                <select name="role" required>
+                  <option value="">请选择</option>
+                  <option>英语教师</option>
+                  <option>教研员</option>
+                  <option>学生</option>
+                  <option>平台维护者</option>
+                </select>
+              </label>
+              <label>
+                <span>相关教材</span>
+                <input name="book" type="text" placeholder="例如：人教版七年级上册" />
+              </label>
+              <label class="wide-field">
+                <span>意见与建议</span>
+                <textarea name="message" rows="5" placeholder="请写下你希望新增、修改或优化的内容" required></textarea>
+              </label>
+              <label class="wide-field">
+                <span>联系方式</span>
+                <input name="contact" type="text" placeholder="邮箱 / 微信 / 手机号，可选" />
+              </label>
+              <button class="feedback-submit" type="submit">提交建议</button>
+              <p class="feedback-note" id="feedbackNote" aria-live="polite">
+                当前为静态网页，提交后会先保存在本机浏览器中，后续可接入表单后台。
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
